@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+
+    <style>
+        .container{
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 650px;
+            
+        }
+        #BMI{
+            text-align: center;
+            padding: 10px;
+        }
+        form{
+            text-align: center;
+        }
+        #height{
+            width: 200px;
+            height: 30px;
+            font-size: 25px;
+        }
+
+        #weight{
+            width: 200px;
+            height: 30px;
+            font-size: 25px;
+            
+        }
+        p{
+            font-size: 30px;
+        }
+
+        button{
+            width: 200px;
+            height: 50px;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        #results{
+            font-size: 40px;
+            padding: 20px;
+        }
+        #guide{
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="BMI">BMI CALCULATOR</h1>
+        <form action="">
+            <p><label>Height in CM : </label><input type="text" id="height"></p>
+
+            <p><label>Weight in CM : </label><input type="text" id="weight"></p>
+
+            <button>Calculate</button>
+
+            <div id="results"></div>
+            <div class="weight-guide">
+                <div id="guide"></div>
+                <h3>BMI Weight Guide</h3>
+                <p>Under WEeight : less than 18.6</p>
+                <p>Normal Range : 18.6 to 24.9</p>
+                <p>overweight : Greater Than 24.9</p>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+
+
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function(event){
+        event.preventDefault()
+
+       const height = parseInt (document.querySelector('#height').value)
+       const weight = parseInt (document.querySelector('#weight').value)
+       const results = document.querySelector('#results')
+
+       if(height === '' || height<0 || isNaN(height)){
+        results.innerHTML = `please give a valid height ${height}`
+       } else if(weight === '' || weight<0 || isNaN(weight)){
+         results.innerHTML = `please give a valid weight ${weight}`
+       } else{
+        const bmi = (weight / ((height*height) / 10000)).toFixed(2);
+        results.innerHTML = `${bmi}`
+       }
+
+       const guide =  document.querySelector('#guide')
+
+       if(bmi <= 18.6){
+        guide.innerHTML = ` You Are Under WEeight Your Bmi is ${bmi}` 
+       }
+       else if(bmi > 18.6 || bmi == 24.9){
+        guide.innerHTML = ` You Are normal Your Bmi is ${bmi}` 
+       }
+
+       else{
+        guide.innerHTML = ` You Are over WEeight Your Bmi is ${bmi}` 
+       }
+
+    })
+
+
+</script>
+</html>
