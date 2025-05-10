@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="NEW_PORTFOLIO.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="hlobe.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">contact us</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header_text">
+                <p> <span class="auto-input"></span></p>
+                <h1>Hello, I'm <br> <span class="auto-input2"></span></h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- --------about section start----------  -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col1">
+                    <img src="darkp.jpg" alt="">
+                </div>
+                <div class="about_col2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum id, commodi illum quae quos maiores
+                        molestias aperiam consectetur, iste necessitatibus, optio vel nisi magni pariatur incidunt dicta
+                        dolorum quis omnis enim? Quasi accusamus voluptatibus sint quae deserunt corporis molestias
+                        similique sapiente distinctio, amet minus illo nesciunt impedit, rem porro, optio veniam. Odit
+                        sequi
+                        obcaecati perspiciatis possimus fugit totam at, aliquam dolor harum a, exercitationem
+                        perferendis iste minus. Magnam tenetur laudant</p>
+
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab_links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Websites Development</li>
+                            <li><span>Web Designing</span><br>Designing Web Interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_contents" id="experience">
+                        <ul>
+                            <li><span>fresher</span><br> Web Developer</li>
+                            <li><span>Web Development</span><br>Websites Development</li>
+                            <li><span>Web Designing</span><br>Designing Web Interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>10th</span><br>From G.B.S.S.School, G-Block, Vikas Puri</li>
+                            <li><span>12th</span><br>Wiht Science Stream</li>
+                            <li><span>Web Development</span><br>From Sum Foundation</li>
+                            <li><span>Web Designing</span><br>Designing Web Interfaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------services section--------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My Skills</h1>
+            <div class="services_list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit hic qui quidem explicabo
+                        voluptatibus illum blanditiis et voluptatum aperiam.</p>
+                    <a href="#">Learn more </a>
+                </div>
+
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>PHP </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit hic qui quidem explicabo
+                        voluptatibus illum blanditiis et voluptatum aperiam.</p>
+                    <a href="#">Learn more </a>
+                </div>
+
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Java Script</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit hic qui quidem explicabo
+                        voluptatibus illum blanditiis et voluptatum aperiam.</p>
+                    <a href="#">Learn more </a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-laptop-file"></i>
+                    <h2>BootStrap</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit hic qui quidem explicabo
+                        voluptatibus illum blanditiis et voluptatum aperiam.</p>
+                    <a href="#">Learn more </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------------portfolio section----------- -->
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Projects</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>COLOUR CHANGER</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, fugiat assumenda iste ducimus
+                            praesentium asperiores r</p>
+                        <a href="COLOUR CHANGER IN JS.HTML"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>CALCULATOR</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, fugiat assumenda iste ducimus
+                            praesentium asperiores r</p>
+                        <a href="calculator2copy.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.jpg" alt="">
+                    <div class="layer">
+                        <h3>BMI CALCULATOR</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, fugiat assumenda iste ducimus
+                            praesentium asperiores r</p>
+                        <a href="BMI CALCULATOR.HTML"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-5.jpg" alt="">
+                    <div class="layer">
+                        <h3>Netflix Website Clone</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, fugiat assumenda iste ducimus
+                            praesentium asperiores r</p>
+                        <a href="netflix_clone.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-5.jpg" alt="">
+                    <div class="layer">
+                        <h3>Flipkart Clone Website</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, fugiat assumenda iste ducimus
+                            praesentium asperiores r</p>
+                        <a href="flipclone.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>COLOUR CHANGER</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, fugiat assumenda iste ducimus
+                            praesentium asperiores r</p>
+                        <a href="COLOUR CHANGER IN JS.HTML"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="btn"> See Mors</a>
+            </div>
+        </div>
+
+        <!-- ---------------Contact section------------ -->
+
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact_left">
+                        <h1 class="sub_title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> harman@1w3567.com</p>
+                        <p><i class="fa-solid fa-phone-volume"></i> 35783557934759</p>
+                        <div class="social_icons">
+                            <a href="https://whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+
+                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+
+                            <a href="https://twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+
+                            <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+
+                            <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+
+                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <a href="my cv.pdf" class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact_right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p><i class="fa-solid fa-heart"></i> Copyright @ harman Singh. </p>
+            </div>
+        </div>
+
+
+
+        <script>
+
+
+            var tablinks = document.getElementsByClassName("tab_links");
+            var tabcontents = document.getElementsByClassName("tab_contents");
+
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active_link");
+
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active_tab");
+
+                }
+                event.currentTarget.classList.add("active_link");
+                document.getElementById(tabname).classList.add("active_tab")
+            }
+        </script>
+
+
+        <script>
+            var sidemen = document.getElementById("sidemenu")
+
+            function openmenu() {
+                sidemen.style.right = "0"
+            }
+            function closemenu() {
+                sidemen.style.right = "-200px"
+            }
+
+        </script>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+        <script>
+
+            var typed = new Typed(".auto-input", {
+                strings: ["Web Developer", "UI/UX Designer"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            })
+            var typed = new Typed(".auto-input2", {
+                strings: ["Harman Singh", "Web Developer", "UI/UX Designer"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            })
+        </script>
+</body>
+
+</html>
