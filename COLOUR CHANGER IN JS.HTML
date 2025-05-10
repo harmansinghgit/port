@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR CHANGER IN JS</title>
+    <style>
+        #container{
+            width: 100%;
+            height: 500px;
+            background-color: white;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* margin: 10px; */
+        }
+
+        .button{
+            width: 150px;
+            height: 150px;
+            border: 3px solid black;
+            border-radius: 20px;
+        }
+
+        #red{
+            background-color: red;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #green{
+            background-color: green;
+        }
+        #white{
+            background-color: white;
+        }
+        #pink{
+            background-color: pink;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <h1><CENTER>COLOR CHANGER </CENTER> </h1>
+    <h3> <b><center>CLICK ON ANY COLOR AND CHANGE THE COLOR OF PAGE </center></b></h3>
+
+    <div id="container">
+        
+        <div class="button" id="red"></div>
+        <div class="button" id="blue"></div>
+        <div class="button" id="green"></div>
+        <div class="button" id="white"></div>
+        <div class="button" id="pink"></div>
+        <div class="button" id="yellow"></div>
+       
+        
+        
+    </div>
+
+
+    <script>
+        const buttones = document.querySelectorAll('.button');
+        const body = document.querySelector("body")
+
+        buttones.forEach(function (button) {
+            button.addEventListener('click', function(event) {
+                console.log(event)
+                console.log(event.target)
+                if(event.target.id === 'red'){
+                    container.style.backgroundColor = event.target.id;
+                }
+                if(event.target.id === 'blue'){
+                    container.style.backgroundColor = event.target.id;
+                }
+                if(event.target.id === 'green'){
+                    container.style.backgroundColor = event.target.id;
+                }
+                if(event.target.id === 'white'){
+                    container.style.backgroundColor = event.target.id;
+                }
+                if(event.target.id === 'pink'){
+                    container.style.backgroundColor = event.target.id;
+                }
+                if(event.target.id === 'yellow'){
+                    container.style.backgroundColor = event.target.id;
+                }
+               
+                
+            })
+        });
+    </script>
+</body>
+</html>
